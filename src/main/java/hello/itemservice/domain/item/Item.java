@@ -1,6 +1,9 @@
 package hello.itemservice.domain.item;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
 
 @Data
 public class Item {
@@ -12,8 +15,7 @@ public class Item {
     public Item() {
     }
 
-    public Item(Long id, String itemName, Integer price, Integer quantity) {
-        this.id = id;
+    public Item(String itemName, Integer price, Integer quantity) {
         this.itemName = itemName;
         this.price = price;
         this.quantity = quantity;
